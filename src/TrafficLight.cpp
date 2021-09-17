@@ -92,7 +92,7 @@ void TrafficLight::cycleThroughPhases()
     //infinite loop	
     while (true) {
           
-          std::this_thread::sleep_for(std::chrono::milliseconds(100));
+          std::this_thread::sleep_for(std::chrono::milliseconds(1));
           time_elapsed = std::chrono::high_resolution_clock::now() - start_time;
 
           if (time_elapsed.count() > cycleTime) {
